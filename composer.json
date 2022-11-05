@@ -1,0 +1,37 @@
+{
+    "name": "dasauser/currency-scoop-client",
+    "description": "Client for work with CurrencyScoop API (https://currencyscoop.com/api-documentation)",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "dasauser",
+            "email": "dasauser@gmail.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.1",
+        "psr/http-message": "~1.0",
+        "psr/http-client": "~1.0",
+        "psr/http-factory": "~1.0",
+        "guzzlehttp/guzzle": "~7.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dasauser\\CurrencyScoop\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dasauser\\CurrencyScoop\\tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
