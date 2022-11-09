@@ -1,6 +1,6 @@
 # Currency Scoop PHP Client
 
-Client for work with [CurrencyScoop]((https://currencyscoop.com/api-documentation)) API
+Client for work with [CurrencyScoop](https://currencyscoop.com/api-documentation) API
 
 ## Install
 
@@ -20,15 +20,15 @@ $client = (new ClientBuilder())->buildClient('yourApiKey');
 
 $currency = $client->historical(
     CurrencyCode::USD,
-    new \DateTimeImmutable('2022-10-11'),
+    new \DateTimeImmutable('2015-06-15'),
     [CurrencyCode::EUR, CurrencyCode::GBP]
 );
 
 echo $currency->getCode()->value; // USD
 
-echo $currency->getRate(CurrencyCode::EUR); // 0.88073399
-echo $currency->getRate(CurrencyCode::GBP); // 0.99868587
-echo $currency->getRate(CurrencyCode::BRL); // 0.0
+echo $currency->getRate(CurrencyCode::EUR); // 0.88835713
+echo $currency->getRate(CurrencyCode::GBP); // 0.6426023
+echo $currency->getRate(CurrencyCode::BRL); // 0
  
 
 ```
