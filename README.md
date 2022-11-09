@@ -6,7 +6,7 @@ Client for work with [CurrencyScoop]((https://currencyscoop.com/api-documentatio
 
 Via composer
 
-```
+```bash
 composer require dasauser/currency-scoop-client
 ```
 
@@ -35,11 +35,11 @@ echo $currency->getRate(CurrencyCode::BRL); // 0.0
 
 ## Testing
 
-```shell
+```bash
 composer test
 ```
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/dasauser/currency-scoop-client) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/dasauser/currency-scoop-client/blob/main/LICENSE) for more information.
 
